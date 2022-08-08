@@ -1,65 +1,37 @@
 # snippets-tikzcd README
 
-This is the README for your extension "snippets-tikzcd". After writing up a brief description, we recommend including the following sections.
+```snippets-tikzcd``` provides a variety of snippets to generate tikz-cd code for commutative diagrams of various shapes.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Currently, the extension provides snippets for generating
 
-For example if there is an image subfolder under your extension project workspace:
+    - (pushout/pullback) squares
+    - triangles
+    - cubes
+    - (short/split/long) exact sequences and the 'snake'
+    - equalizers and reflexive parallel pairs
+    - (augmented) (co-)simplicial objects
+    - adjunctions and natural transformations
 
-\!\[feature X\]\(images/feature-x.png\)
+After installing the extension, just type something like ```square``` in any LaTeX document, select the desired diagram in the pop-up menu that opens and press enter.
+The extension will then have generated the necessary tikz-cd code.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Prerequisites
 
-## Requirements
+While it is not technically necessary, it makes a lot of sense to use a LaTeX plugin like [```LaTeX Workshop```](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) in combination with this extension.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## Showcase
 
-## Extension Settings
+![Demo](./tutorial/demo.gif)
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+The above code will generate a diagram like this:
 
-For example:
+![Diagram](./tutorial/diagram.png)
 
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
+Note: Renaming the objects ```X```, ```Y```, ```S``` and ```T``` has been done by pressing ```tab``` to cycle through those variables and replace them by ```A```, ```B```, ```C``` and ```D```
 ## Release Notes
-
-Users appreciate release notes as you update your extension.
 
 ### 1.0.0
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Initial release of ```snippets-tikzcd```.
